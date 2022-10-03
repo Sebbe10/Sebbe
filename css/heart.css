@@ -1,0 +1,63 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    margin: 0 auto;
+    animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: translateY(-50%) rotate(45deg) scale(0.8);
+    }
+
+    5% {
+        transform: translateY(-50%) rotate(45deg) scale(0.9);
+    }
+
+    10% {
+        transform: translateY(-50%) rotate(45deg) scale(0.8);
+    }
+
+    15% {
+        transform: translateY(-50%) rotate(45deg) scale(0.1);
+    }
+
+    50% {
+        transform: translateY(-50%) rotate(45deg) scale(0.8);
+    }
+
+    100% {
+        transform: translateY(-50%) rotate(45deg) scale(0.8);
+    }
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+}
+
+.heart::before {
+    top: -50px;
+}
+
+.heart::after {
+    left: -50px;
+}
