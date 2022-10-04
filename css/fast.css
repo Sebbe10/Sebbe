@@ -16,3 +16,8 @@
         top: 20px; left: 200px;
     }
 }
+
+div {
+    background: rgb(0, 98, 255);
+    background: linear-gradient(0deg, rgb(26, 46, 175) 0%, rgb(180, 22, 22) 100%);
+}
